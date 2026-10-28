@@ -1,42 +1,38 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+    
 }
+
 
 
 h1{
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h2{
     font-size: 34px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h3{
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h4{
     font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h5{
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 h6{
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 p{
     font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -82,6 +78,40 @@ p{
 }
 .contact button{
    background: linear-gradient(90deg, #F2D78B 0%, #B48A3A 100%);
+}
+
+
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/group_donat_gresa/assets/images/Rectangle\ 23.png);
+    color: white;
+}
+
+.text{
+    width: 70%;
+    height: 50vh;
+    margin-left: 126px ;
+    padding-top: 136px;
+
+}
+
+.text h2{
+    font-weight: 900px;
+    font-size: 96px;
+}
+
+.text p{
+    width: 90%;
+    font-weight: 400px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+
+.btn .btn1{
+    background: linear-gradient(90deg, #F2D78B 0%, #B48A3A 100%);
     color:rgb(5, 5, 76);
     border: none;
     padding: 10px 20px;
@@ -110,4 +140,27 @@ p{
     color:gray;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+}
+    border-radius: 12px;
+    min-height: 45px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn .btn2{
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.34);
+    border: 1px solid rgb(255, 174, 0);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-bottom: 15px;
+    gap: 10px;
+    border-radius: 12px;
+    min-height: 45px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
 }
