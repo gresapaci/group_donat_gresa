@@ -77,7 +77,18 @@ p{
    padding-right: 20px;
 }
 .contact button{
-   background: linear-gradient(90deg, #F2D78B 0%, #B48A3A 100%);
+    background: linear-gradient(90deg, #F2D78B 0%, #B48A3A 100%);
+    color:rgb(5, 5, 76);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-bottom: 15px;
+    gap: 10px;
+    border-radius: 5px;
+    min-height: 45px;
+
 }
 
 
@@ -140,7 +151,6 @@ p{
     color:gray;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-}
     border-radius: 12px;
     min-height: 45px;
     margin-top: 20px;
