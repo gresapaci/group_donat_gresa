@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 34px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4{
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h6{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
