@@ -315,3 +315,92 @@
   line-height: 1.5;
   padding-top: 30px;
 }
+
+/* SECTION 5 - CONCIERGE EXPERIENCE (width in %, height in vh, rest in px / %) */
+
+html, body {
+  overflow-x: hidden;
+}
+
+.section5 {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 79px 7.6% 80px 8.4%;
+  background: linear-gradient(100deg, #0a2038 0%, #07111f 45%, #04080f 100%);
+  color: #ffffff;
+}
+
+.con-subtitle {
+  display: block;
+  color: #c9a45c;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.con-title {
+  width: 60%;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 21px;
+}
+
+/* 4 cards per row */
+.con-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 1.05%;
+  width: 100%;
+}
+
+.con-card {
+  width: calc((100% - 3.15%) / 4);
+  height: 19.4vh;
+  padding: 10px;
+  border: 1px solid rgba(110, 140, 180, 0.35);
+  border-radius: 15px;
+}
+
+.con-card:nth-child(4n+1) { background: linear-gradient(135deg, rgba(34, 58, 90, 0.6) 0%, rgba(24, 40, 62, 0.6) 100%); }
+.con-card:nth-child(4n+2) { background: linear-gradient(135deg, rgba(30, 48, 70, 0.6) 0%, rgba(24, 34, 48, 0.6) 100%); }
+.con-card:nth-child(4n+3),
+.con-card:nth-child(4n)   { background: linear-gradient(135deg, rgba(28, 36, 50, 0.6) 0%, rgba(22, 28, 38, 0.6) 100%); }
+
+.con-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 164, 92, 0.28) 0%, rgba(201, 164, 92, 0.06) 70%, transparent 100%);
+}
+
+.con-icon::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #c9a45c;
+}
+
+.con-card h3 {
+  margin: 10px 0 0 7px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* larger screens: same layout, bigger sizes */
+@media (min-width: 1500px) {
+  .section5 { padding: 98px 0.4% 48px 4.7%; }
+  .con-subtitle { font-size: 21px; margin-bottom: 12px; }
+  .con-title { font-size: 95px; letter-spacing: -4px; margin-bottom: 42px; }
+  .con-grid { gap: 24px 1.2%; }
+  .con-card { width: calc((100% - 3.6%) / 4); height: 23vh; padding: 25px; border-radius: 30px; }
+  .con-icon { width: 54px; height: 54px; }
+  .con-icon::before { width: 18px; height: 18px; }
+  .con-card h3 { margin: 26px 0 0 11px; font-size: 20px; }
+}
