@@ -316,7 +316,6 @@
   padding-top: 30px;
 }
 
-/* SECTION 5 - CONCIERGE EXPERIENCE (width in %, height in vh, rest in px / %) */
 
 html, body {
   overflow-x: hidden;
@@ -348,7 +347,6 @@ html, body {
   margin-bottom: 21px;
 }
 
-/* 4 cards per row */
 .con-grid {
   display: flex;
   flex-wrap: wrap;
@@ -393,14 +391,4 @@ html, body {
   font-weight: 600;
 }
 
-/* larger screens: same layout, bigger sizes */
-@media (min-width: 1500px) {
-  .section5 { padding: 98px 0.4% 48px 4.7%; }
-  .con-subtitle { font-size: 21px; margin-bottom: 12px; }
-  .con-title { font-size: 95px; letter-spacing: -4px; margin-bottom: 42px; }
-  .con-grid { gap: 24px 1.2%; }
-  .con-card { width: calc((100% - 3.6%) / 4); height: 23vh; padding: 25px; border-radius: 30px; }
-  .con-icon { width: 54px; height: 54px; }
-  .con-icon::before { width: 18px; height: 18px; }
-  .con-card h3 { margin: 26px 0 0 11px; font-size: 20px; }
-}
+
