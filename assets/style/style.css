@@ -213,8 +213,9 @@
 
 .section2 {
   width: 100%;
-  height: 200vh;
-  background: linear-gradient(90deg, #111827 0%, #080d14 50%, #000000 100%);
+  height: auto;
+  padding-bottom: 32px;
+  background: #111a27;
   color: #ffffff;
 }
 
@@ -628,4 +629,112 @@ html, body {
   font-size: 1.07vw;
   font-weight: 600;
   letter-spacing: -0.03vw;
+}
+  
+}
+.fleet-showcase {
+    width: 100%;
+    max-width: 1500px;
+    margin: 150px auto 0;
+    padding: 0 45px;
+}
+
+.fleet-heading {
+    margin-bottom: 30px;
+}
+
+.fleet-heading p {
+    color: #d8b467;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.fleet-heading h2 {
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 56px;
+    line-height: 1.15;
+}
+
+.fleet-list {
+    display: grid;
+    gap: 15px;
+}
+
+.fleet-card {
+    display: grid;
+    grid-template-columns: 47.5% minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    height: 267px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #1d232d;
+}
+
+.fleet-card__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fleet-card__details {
+    min-width: 0;
+    min-height: 0;
+    padding: 20px;
+}
+
+.fleet-card__category {
+    margin-bottom: 6px;
+    color: #d8b467;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.fleet-card__details h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.fleet-card__specs {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.fleet-card__specs dt {
+    color: #d8b467;
+    font-weight: 700;
+}
+
+.fleet-card__specs dd {
+    color: #e5e7eb;
+}
+
+.fleet-card__description {
+    margin-top: 10px;
+    color: #e5e7eb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.fleet-card__button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: 1px solid rgba(216, 180, 103, 0.55);
+    border-radius: 8px;
+    background: #303844;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fleet-card__button:hover {
+    background: #3b4654;
 }
