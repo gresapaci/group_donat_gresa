@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SkyLux Executive Aviation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
 
     <div class="nav container">
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
 
         <div class="logo">
 
@@ -27,7 +31,7 @@
 
         <div class="links">
             <a href="#">Fleet</a>
-            <a href="#">Books</a>
+            <a href="#">Book</a>
             <a href="#">Cars</a>
             <a href="#">Luxury Yacht</a>
             <a href="#">Luxury Hotels & Villas</a>
@@ -39,13 +43,15 @@
             <button>Book Your Flight</button>
         </div>
 
+        <label for="menu-toggle" class="menu-btn" aria-hidden="true"><span></span><span></span><span></span></label>
+
     </div>
 
 
     <div class="section1">
         <div class="text">
             <h4>PRIVATE AVIATION REDEFINED</h4>
-            <h2>TRAVEL BEYOND FIRST CLASS</h2>
+            <h2>Travel Beyond First Class</h2>
             <p>Private Jets. Luxury Vehicles. Exclusive Villas. Global Concierge. Every journey perfectly tailor-made.
             </p>
 
@@ -54,6 +60,44 @@
                 <a href="#"><button class="btn2">Explore Fleet</button></a>
             </div>
         </div>
+
+        <form class="booking" onsubmit="return false">
+            <div class="field">
+                <label for="departure">DEPARTURE</label>
+                <input type="text" id="departure" placeholder="Teterboro, New York">
+            </div>
+            <div class="field">
+                <label for="destination">DESTINATION</label>
+                <input type="text" id="destination" placeholder="Nice Cote d'Azur">
+            </div>
+            <div class="field">
+                <label for="passengers">PASSENGERS</label>
+                <select id="passengers">
+                    <option>1 Passenger</option>
+                    <option>2 Passengers</option>
+                    <option>3 Passengers</option>
+                    <option selected>4 Passengers</option>
+                    <option>6 Passengers</option>
+                    <option>8 Passengers</option>
+                    <option>12+ Passengers</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="date">DATE</label>
+                <input type="date" id="date">
+            </div>
+            <div class="field">
+                <label for="aircraft">AIRCRAFT</label>
+                <select id="aircraft">
+                    <option>Gulfstream G700</option>
+                    <option>Bombardier Global 7500</option>
+                    <option>Dassault Falcon 10X</option>
+                    <option>Embraer Praetor 600</option>
+                    <option>Cessna Citation Longitude</option>
+                </select>
+            </div>
+            <button type="submit" class="booking-btn">Request Itinerary</button>
+        </form>
     </div>
 
 
@@ -191,9 +235,7 @@
             </div>
 
         </div>
-
-
-        
+    </section>
 
 <section class="section3">
     <span class="fleet-subtitle">AIRCRAFT WITHOUT COMPROMISE</span>
@@ -207,10 +249,10 @@
                 <span class="fleet-tag">ULTRA LONG RANGE</span>
                 <h3>Gulfstream G700</h3>
                 <dl class="specs">
-                    <dt>Passengers</dt><dd>19 Passengers</dd>
-                    <dt>Range</dt><dd>7750 nm</dd>
-                    <dt>Speed</dt><dd>Mach- 0.925</dd>
-                    <dt>Cabin</dt><dd>Up to 5 separate living areas</dd>
+                    <div><dt>Passengers</dt><dd>19 Passengers</dd></div>
+                    <div><dt>Range</dt><dd>7750 nm</dd></div>
+                    <div><dt>Speed</dt><dd>Mach- 0.925</dd></div>
+                    <div><dt>Cabin</dt><dd>Up to 5 separate living areas</dd></div>
                 </dl>
                 <p>Wi-Fi, enclosed lavatory, chef-ready galley with free gluten food, conference suite, and curated amenities.</p>
                 <button class="fleet-btn">Book Aircraft</button>
@@ -223,10 +265,10 @@
                 <span class="fleet-tag">ULTRA LONG RANGE</span>
                 <h3>Bombardier Global 7500</h3>
                 <dl class="specs">
-                    <dt>Passengers</dt><dd>19 Passengers</dd>
-                    <dt>Range</dt><dd>7700 nm</dd>
-                    <dt>Speed</dt><dd>Mach- 0.925</dd>
-                    <dt>Cabin</dt><dd>Up to 4 separate cabin zones</dd>
+                    <div><dt>Passengers</dt><dd>19 Passengers</dd></div>
+                    <div><dt>Range</dt><dd>7700 nm</dd></div>
+                    <div><dt>Speed</dt><dd>Mach- 0.925</dd></div>
+                    <div><dt>Cabin</dt><dd>Up to 4 separate cabin zones</dd></div>
                 </dl>
                 <p>High-speed Wi-Fi, four living areas, private bedroom, enclosed lavatory, chef-ready galley, conference suite, and premium amenities.</p>
                 <button class="fleet-btn">Book Aircraft</button>
@@ -239,10 +281,10 @@
                 <span class="fleet-tag">ULTRA LONG RANGE</span>
                 <h3>Dassault Falcon 10X</h3>
                 <dl class="specs">
-                    <dt>Passengers</dt><dd>19 Passengers</dd>
-                    <dt>Range</dt><dd>7500 nm</dd>
-                    <dt>Speed</dt><dd>Mach- 0.925</dd>
-                    <dt>Cabin</dt><dd>Up to 4 customizable cabins</dd>
+                    <div><dt>Passengers</dt><dd>19 Passengers</dd></div>
+                    <div><dt>Range</dt><dd>7500 nm</dd></div>
+                    <div><dt>Speed</dt><dd>Mach- 0.925</dd></div>
+                    <div><dt>Cabin</dt><dd>Up to 4 customizable cabins</dd></div>
                 </dl>
                 <p>Expansive cabin, high-speed Wi-Fi, private suite, elegant lounge, full-service galley, advanced cabin technology, and exceptional comfort.</p>
                 <button class="fleet-btn">Book Aircraft</button>
@@ -255,10 +297,10 @@
                 <span class="fleet-tag">ULTRA LONG RANGE</span>
                 <h3>Embraer Praetor 600</h3>
                 <dl class="specs">
-                    <dt>Passengers</dt><dd>9 Passengers</dd>
-                    <dt>Range</dt><dd>4,018 nm</dd>
-                    <dt>Speed</dt><dd>Mach- 0.83</dd>
-                    <dt>Cabin</dt><dd>1 main cabin with customizable seating zones</dd>
+                    <div><dt>Passengers</dt><dd>9 Passengers</dd></div>
+                    <div><dt>Range</dt><dd>4,018 nm</dd></div>
+                    <div><dt>Speed</dt><dd>Mach- 0.83</dd></div>
+                    <div><dt>Cabin</dt><dd>1 main cabin with customizable seating zones</dd></div>
                 </dl>
                 <p>High-speed Wi-Fi, spacious cabin, enclosed lavatory, full galley, comfortable seating, smart technology.</p>
                 <button class="fleet-btn">Book Aircraft</button>
@@ -271,10 +313,10 @@
                 <span class="fleet-tag">ULTRA LONG RANGE</span>
                 <h3>Cessna Citation Longitude</h3>
                 <dl class="specs">
-                    <dt>Passengers</dt><dd>12 Passengers</dd>
-                    <dt>Range</dt><dd>3500 nm</dd>
-                    <dt>Speed</dt><dd>Mach- 0.84</dd>
-                    <dt>Cabin</dt><dd>1 spacious cabin with customizable seating areas</dd>
+                    <div><dt>Passengers</dt><dd>12 Passengers</dd></div>
+                    <div><dt>Range</dt><dd>3500 nm</dd></div>
+                    <div><dt>Speed</dt><dd>Mach- 0.84</dd></div>
+                    <div><dt>Cabin</dt><dd>1 spacious cabin with customizable seating areas</dd></div>
                 </dl>
                 <p>Fast connectivity, spacious cabin, private lavatory, premium seating, modern entertainment, efficient galley, and refined travel experience.</p>
                 <button class="fleet-btn">Book Aircraft</button>
@@ -340,9 +382,9 @@
 
 <section class="section5">
     <span class="con-subtitle">EVERY MOVEMENT ORCHESTRATED</span>
-    <h1 class="con-title">The Complete Concierge Experience</h1>
+    <h1 class="con-title">The Complete Concierge<br> Experience</h1>
 
-    <div class="con-grid">
+    <div class="con-list">
         <div class="con-card"><span class="con-icon"></span><h3>Book Flight</h3></div>
         <div class="con-card"><span class="con-icon"></span><h3>Airport Pickup</h3></div>
         <div class="con-card"><span class="con-icon"></span><h3>Private Jet</h3></div>
@@ -358,142 +400,122 @@
 
 
 
-<div class="section7">
-
-   
+<section class="section7">
     <div class="text-left2">
-    <span class="subtitle">A PRIVATE WORLD MAP</span>
-    <h1 class="title">Popular Destinations</h1>
-  </div>
-
- <div class="complete2">
-  <div class="left-card">
-    <div class="card">
-    <p>Global network</p>
-    <h2 class="countries">150+ countries served</h2>
-    <p class="destination">Interactive-style destination markers for Monaco, Dubai, Maldives, Mykonos, Ibiza, Paris, London, New York, Tokyo, Singapore, the Swiss Alps, and the Amalfi Coast.</p>
-    </div>
-  </div>
-
-
-  <div class="name-images">
-    <div class="monaco">
-    <img src="assets/images/monaco.jpg" alt="monaco">
-    <h2>Monaco</h2>
+        <span class="subtitle">A PRIVATE WORLD MAP</span>
+        <h1 class="title">Popular Destinations</h1>
     </div>
 
-     <div class="monaco">
-    <img src="assets/images/dubai.jpg" alt="dubai">
-    <h2>Dubai</h2>
+    <div class="dest-top">
+        <div class="left-card">
+            <p>Global network</p>
+            <h2 class="countries">150+ countries served</h2>
+            <p class="destination">Interactive-style destination markers for Monaco, Dubai, Maldives, Mykonos, Ibiza, Paris, London, New York, Tokyo, Singapore, the Swiss Alps, and the Amalfi Coast.</p>
+        </div>
+
+        <div class="dest-cards">
+            <div class="dest-card">
+                <img src="./assets/images/monaco.jpg" alt="Monaco">
+                <h2>Monaco</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/dubai.jpg" alt="Dubai">
+                <h2>Dubai</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/maldives.jpg" alt="Maldives">
+                <h2>Maldives</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/Mykonos.jpg" alt="Mykonos">
+                <h2>Mykonos</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/ibiza.png" alt="Ibiza">
+                <h2>Ibiza</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/paris.jpg" alt="Paris">
+                <h2>Paris</h2>
+            </div>
+        </div>
     </div>
 
+    <div class="dest-cards">
+            <div class="dest-card">
+                <img src="./assets/images/london.jpg" alt="London">
+                <h2>London</h2>
+            </div>
 
-     <div class="monaco">
-    <img src="assets/images/maldives.jpg" alt="maldives">
-    <h2>Maldives</h2>
+            <div class="dest-card">
+                <img src="./assets/images/new york.jpg" alt="New York">
+                <h2>New York</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/tokyo.jpg" alt="Tokyo">
+                <h2>Tokyo</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/singapure.jpg" alt="Singapore">
+                <h2>Singapore</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/swiss alps.jpg" alt="Swiss Alps">
+                <h2>Swiss Alps</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/Amalfi Coast.jpg" alt="Amalfi Coast">
+                <h2>Amalfi Coast</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/istanbul.jpg" alt="Istanbul">
+                <h2>Istanbul</h2>
+            </div>
+
+            <div class="dest-card">
+                <img src="./assets/images/Rome.jpg" alt="Rome">
+                <h2>Rome</h2>
+            </div>
     </div>
+</section>
 
-    <div class="monaco">
-    <img src="assets/images/Mykonos.jpg" alt="Mykonos">
-    <h2>Mykonos</h2>
-    </div>
-
-
-    <div class="monaco">
-    <img src="assets/images/ibiza.png" alt="ibiza">
-    <h2>Ibiza</h2>
-    </div>
-
-
-    <div class="monaco">
-    <img src="assets/images/paris.jpg" alt="paris">
-    <h2>Paris</h2>
-    </div>
-  </div>
- </div>
-
- <div class="complete3">
-    <div class="name-images">
-         <div class="tokyo">
-    <img src="assets/images/london.jpg" alt="london">
-    <h2>London</h2>
-    </div>
-
- <div class="tokyo">
-    <img src="assets/images/new york.jpg" alt="new york">
-    <h2>New York</h2>
-    </div>
-
-     <div class="tokyo">
-    <img src="assets/images/tokyo.jpg" alt="tokyo">
-    <h2>Tokyo</h2>
-    </div>
-
-
-     <div class="tokyo">
-    <img src="assets/images/singapure.jpg" alt="singapure">
-    <h2>Singapore</h2>
-    </div>
-
-    <div class="tokyo">
-    <img src="assets/images/swiss alps.jpg" alt="swiss">
-    <h2>Swiss Alps</h2>
-    </div>
-
-    <div class="tokyo">
-    <img src="assets/images/Amalfi Coast.jpg" alt="Amalfi">
-    <h2>Amalfi Coast</h2>
-    </div>
-
-    <div class="tokyo">
-    <img src="assets/images/istanbul.jpg" alt="istanbul">
-    <h2>Istanbul</h2>
-    </div>
-
-    <div class="tokyo">
-    <img src="assets/images/Rome.jpg" alt="rome">
-    <h2>Rome</h2>
-    </div>
-
-
- </div>
-</div>
-</div>
-
-
-
-
-
-
-
-  
 <section class="why-choose" aria-labelledby="why-title">
-            <header class="why-choose__heading">
+            <header class="heading">
                 <p>PERFORMANCE AT GLOBAL SCALE</p>
                 <h2 id="why-title">Why Choose Us</h2>
             </header>
 
-            <div class="why-choose__stats">
-                <article><strong>99.9%</strong><span>On-time flights</span></article>
-                <article><strong>150+</strong><span>Countries served</span></article>
-                <article><strong>250+</strong><span>Luxury aircraft</span></article>
-                <article><strong>24/7</strong><span>Global concierge</span></article>
-                <article><strong>50,000+</strong><span>Successful trips</span></article>
-                <article><strong>15 min</strong><span>Average response</span></article>
+            <div class="stats">
+                <article><strong>99.9%</strong><span>On-Time Flights</span></article>
+                <article><strong>150+</strong><span>Countries Served</span></article>
+                <article><strong>250+</strong><span>Luxury Aircraft</span></article>
+                <article><strong>24/7</strong><span>Global Concierge</span></article>
+                <article><strong>50,000+</strong><span>Successful Trips</span></article>
+                <article><strong>15 min</strong><span>Average Response</span></article>
             </div>
         </section>
 
         <section class="membership" aria-labelledby="membership-title">
-            <header class="membership__heading">
-                <p>AN INVITATION ONLY TRAVEL CLUB</p>
+            <header class="heading">
+                <p>AN INVITATION-ONLY TRAVEL CLUB</p>
                 <h2 id="membership-title">Membership Program</h2>
             </header>
 
-            <div class="membership__plans">
-                <article class="membership-card">
-                    <p class="membership-card__level">SILVER</p>
+            <div class="plans">
+                <article class="plan">
+                    <p class="level">SILVER</p>
                     <strong>$15k</strong>
-                    <p class="membership-card__intro">Priority access for frequent private travelers.</p>
+                    <p class="intro">Priority access for frequent private travelers.</p>
                     <ul>
                         <li>Priority booking</li>
                         <li>Discounted charter rates</li>
@@ -503,10 +525,10 @@
                     <a href="#">Apply</a>
                 </article>
 
-                <article class="membership-card">
-                    <p class="membership-card__level">GOLD</p>
+                <article class="plan">
+                    <p class="level">GOLD</p>
                     <strong>$50k</strong>
-                    <p class="membership-card__intro">Dedicated advisory for families and executives.</p>
+                    <p class="intro">Dedicated advisory for families and executives.</p>
                     <ul>
                         <li>Priority booking</li>
                         <li>Discounted charter rates</li>
@@ -517,10 +539,10 @@
                     <a href="#">Apply</a>
                 </article>
 
-                <article class="membership-card membership-card--featured">
-                    <p class="membership-card__level">BLACK</p>
+                <article class="plan featured">
+                    <p class="level">BLACK</p>
                     <strong>By invitation</strong>
-                    <p class="membership-card__intro">Total global concierge control for principals.</p>
+                    <p class="intro">Total global concierge control for principals.</p>
                     <ul>
                         <li>Priority booking</li>
                         <li>Discounted charter rates</li>
@@ -536,15 +558,15 @@
         </section>
 
         <section class="latest-news" aria-labelledby="latest-news-title">
-            <header class="latest-news__heading">
+            <header class="heading">
                 <p>LUXURY MAGAZINE</p>
                 <h2 id="latest-news-title">Latest News</h2>
             </header>
 
-            <div class="latest-news__grid">
+            <div class="news-list">
                 <article class="news-card">
                     <img src="./assets/images/news-gulfstream.png" alt="Private jet interior">
-                    <div class="news-card__body">
+                    <div class="news-body">
                         <p>JOURNAL</p>
                         <h3>Gulfstream G700 joins the SkyLux preferred fleet</h3>
                         <span>Insightful coverage of private aviation trends and elite fleet additions.</span>
@@ -553,7 +575,7 @@
 
                 <article class="news-card">
                     <img src="./assets/images/news-monaco.png" alt="Monaco Grand Prix">
-                    <div class="news-card__body">
+                    <div class="news-body">
                         <p>JOURNAL</p>
                         <h3>A private guide to Monaco Grand Prix week</h3>
                         <span>Exclusive perspectives on global sporting events and luxury lifestyle highlights.</span>
@@ -562,7 +584,7 @@
 
                 <article class="news-card">
                     <img src="./assets/images/news-swiss-alps.jpg" alt="Swiss Alps">
-                    <div class="news-card__body">
+                    <div class="news-body">
                         <p>JOURNAL</p>
                         <h3>Winter aviation routes to the Swiss Alps</h3>
                         <span>Curated guidance for seasonal travel, bespoke journeys, and alpine experiences.</span>
@@ -572,29 +594,26 @@
         </section>
 
         <section class="faq" aria-labelledby="faq-title">
-            <header class="faq__heading">
+            <header class="heading">
                 <p>PRIVATE AVIATION CLARITY</p>
                 <h2 id="faq-title">FAQ</h2>
             </header>
 
-            <div class="faq__list">
+            <div class="faq-list">
                 <article>
-                    <h3>V How fast can SkyLux arrange an aircraft?</h3>
-                    <p>For emergency charter, the operations desk can normally present available options within 15 minutes.</p>
+                    <h3>How fast can SkyLux arrange an aircraft?</h3>
+                    <p>For emergency charter, the operations desk can normally present aircraft options within 15 minutes.</p>
                 </article>
                 <article>
-                    <h3>V Can you manage villas, cars, security, and restaurants?</h3>
+                    <h3>Can you manage villas, cars, security, and restaurants?</h3>
                     <p>Yes. SkyLux is designed as a complete travel concierge, not only as an aircraft broker.</p>
                 </article>
                 <article>
-                    <h3>V Do you support diplomatic and celebrity travel?</h3>
+                    <h3>Do you support diplomatic and celebrity travel?</h3>
                     <p>Yes. Privacy, secure routing, and discretion are core operating principles.</p>
                 </article>
             </div>
         </section>
-
-    </section>
-
 
 <footer class="footer">
     <div class="footer-top">
@@ -648,7 +667,12 @@
 
     <div class="footer-bottom">
         <span>© 2026 SkyLux Executive Aviation.</span>
-        <span>Instagram · LinkedIn · X · YouTube</span>
+        <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
     </div>
 </footer>
 
