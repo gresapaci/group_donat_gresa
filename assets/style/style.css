@@ -15,7 +15,6 @@ img {
   max-width: 100%;
 }
 
-/* nav */
 .container {
   width: 100%;
   padding-left: 5%;
@@ -138,7 +137,6 @@ img {
   opacity: 0.9;
 }
 
-/* section 1 - hero */
 .section1 {
   display: flex;
   flex-direction: column;
@@ -206,7 +204,6 @@ img {
   font-weight: 700;
 }
 
-/* booking bar */
 .booking {
   display: flex;
   flex-wrap: wrap;
@@ -263,7 +260,6 @@ img {
   font-size: 14px;
 }
 
-/* section 2 - luxury services */
 .section2 {
   width: 100%;
   padding: 40px 5% 70px;
@@ -371,7 +367,6 @@ img {
   line-height: 1.55;
 }
 
-/* section 3 - fleet showcase */
 .section3 {
   width: 100%;
   padding: 70px 5% 90px;
@@ -491,7 +486,6 @@ img {
   background: #4a4e57;
 }
 
-/* section 4 - luxury vehicles */
 .section4 {
   width: 100%;
   overflow: hidden;
@@ -631,7 +625,6 @@ img {
   background: #2a3341;
 }
 
-/* section 5 - concierge */
 .section5 {
   width: 100%;
   overflow: hidden;
@@ -698,7 +691,6 @@ img {
   font-weight: 600;
 }
 
-/* section 7 - popular destinations */
 .section7 {
   width: 100%;
   padding: 70px 5% 80px;
@@ -788,7 +780,6 @@ img {
   font-weight: 700;
 }
 
-/* why choose us / membership / news / faq */
 .why-choose,
 .membership,
 .latest-news,
@@ -840,7 +831,6 @@ img {
   line-height: 1.1;
 }
 
-/* stats */
 .stats {
   display: flex;
   flex-wrap: wrap;
@@ -876,7 +866,6 @@ img {
   font-size: 12px;
 }
 
-/* membership */
 .plans {
   display: flex;
   flex-wrap: wrap;
@@ -947,7 +936,6 @@ img {
   text-decoration: none;
 }
 
-/* news */
 .news-list {
   display: flex;
   flex-wrap: wrap;
@@ -997,7 +985,6 @@ img {
   line-height: 1.5;
 }
 
-/* faq */
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -1032,7 +1019,6 @@ img {
   line-height: 1.55;
 }
 
-/* footer */
 .footer {
   width: 100%;
   padding: 50px 5% 24px;
@@ -1158,24 +1144,6 @@ img {
   font-size: 12px;
 }
 
-.socials {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.socials a {
-  color: #8a94a1;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.socials a:hover {
-  color: #d8b467;
-}
-
-/* large screens and tv */
 @media (min-width: 1500px) {
   .container,
   .section1,
@@ -1218,9 +1186,7 @@ img {
   .section1 { min-height: 37vh; }
 }
 
-/* responsive */
 
-/* laptops / small desktops */
 @media (max-width: 1200px) {
   .text h2 { font-size: 80px; }
   .title,
@@ -1232,7 +1198,6 @@ img {
   .specs dt { width: 140px; }
 }
 
-/* tablets: nav collapses into a menu */
 @media (max-width: 1024px) {
   .menu-btn {
     display: flex;
@@ -1283,7 +1248,6 @@ img {
   .footer-col { flex: 1 1 22%; }
 }
 
-/* small tablets */
 @media (max-width: 800px) {
   .text h2 { font-size: 64px; }
   .text p { font-size: 18px; }
@@ -1310,7 +1274,6 @@ img {
   .dest-top .dest-card { width: 48%; }
 }
 
-/* phones */
 @media (max-width: 520px) {
   .teksti h5 { font-size: 19px; }
   .teksti h6 { font-size: 8px; }
